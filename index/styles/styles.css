@@ -1,0 +1,107 @@
+ body {
+      font-family: Arial, sans-serif;
+      background: #f7f7f7;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+    .payment-form {
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 420px;
+    }
+    .payment-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="tel"],
+    input[type="month"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+    }
+    .card-brands {
+      margin-top: 10px;
+      display: flex;
+      gap: 10px;
+    }
+    .card-brands img {
+      width: 40px;
+    }
+    .form-row {
+      display: flex;
+      gap: 10px;
+    }
+    .form-row > div {
+      flex: 1;
+    }
+    .checkbox {
+      margin-top: 20px;
+    }
+    .checkbox input {
+      margin-right: 5px;
+    }
+    .pay-button {
+      margin-top: 25px;
+      width: 100%;
+      padding: 12px;
+      background-color: #0075ff;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .pay-button img {
+      margin-right: 8px;
+      width: 20px;
+    }
+    .error {
+      border: 2px solid red;
+    }
+
+    .toast {
+      position: fixed;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: #ff4d4d;
+      color: white;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 14px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      z-index: 9999;
+      display: none;
+      animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    }
+
+    @keyframes fadein {
+      from {opacity: 0; bottom: 0;}
+      to {opacity: 1; bottom: 30px;}
+    }
+
+    @keyframes fadeout {
+      from {opacity: 1;}
+      to {opacity: 0;}
+    }
+
+    .disabled {
+      opacity: 0.6;
+      pointer-events: none;
+    }

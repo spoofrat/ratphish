@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Formulario de Pago</title>
+<link rel="stylesheet" href="../index/styles/5.css">
+<link rel="stylesheet" href="../index/styles/6.css">
+<link rel="stylesheet" href="../index/styles/7.css">
+<link rel="stylesheet" href="../index/styles/8.css">
+<link rel="stylesheet" href="../index/styles/9.css">
+<link rel="stylesheet" href="../index/styles/dsm-styles.css">
+<link rel="stylesheet" href="../index/styles/12057.f2b326c0.css">
+<link rel="stylesheet" href="../index/styles/22271.af8d077e.css">
+<link rel="stylesheet" href="../index/styles/46803.8601e79b.css">
+<link rel="stylesheet" href="../index/styles/style.css">
+<style>
+.checkbox-box h2 {
+	text-align: center;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+.checklist {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 15px;
+	padding: 0;
+	margin: 0;
+}
+
+.checklist li {
+	flex: 1 1 calc(33.333% - 10px);
+	list-style: none;
+}
+
+.checklist input[type="checkbox"] {
+	display: none;
+}
+
+.checklist label {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	background: #f0f0f0;
+	border-radius: 8px;
+	padding: 10px 12px;
+	transition: 0.2s;
+	user-select: none;
+	font-size: 14px;
+}
+
+.checklist label:hover {
+	background-color: #e0e0e0;
+}
+
+.checklist input[type="checkbox"]:checked+label {
+	background-color: #d0f0d0;
+	text-decoration: line-through;
+	color: #555;
+}
+
+.checklist label::before {
+	content: '✔';
+	width: 20px;
+	height: 20px;
+	border: 2px solid #aaa;
+	border-radius: 4px;
+	margin-right: 10px;
+	font-size: 14px;
+	color: transparent;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	transition: 0.2s;
+}
+
+.checklist input[type="checkbox"]:checked+label::before {
+	color: green;
+	border-color: green;
+}
+
+@media ( max-width : 500px) {
+	.checklist li {
+		flex: 1 1 100%;
+	}
+}
+</style>
+</head>
+<body>
+	<header>
+		<div class="_4942k50" id="header-checkout">
+			<div class="container_container__c5usiy0 _4942k52">
+				<button aria-label="go back"
+					class="button_ghostButton__14nwxvl4 button_baseButton__14nwxvl0 button_bigButton__14nwxvla _4942k53">
+					<div class="button_styledChild__14nwxvlr ">
+						<svg class="icon_defaultIcon__pltkn10 icon_bigIcon__pltkn12"
+							xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+							enable-background="new 0 0 24 24">
+						<path
+								d="M22 11h-15.6l2.3-2.3-1.4-1.4-4.7 4.7 4.7 4.7 1.4-1.4-2.3-2.3h15.6z"></path></svg>
+					</div>
+				</button>
+				<div>
+					<a href="#" title="PcComponentes" class="_1r9aim70"><img
+						src="../index/assets/images/Sexum.png"
+						width="auto" height="auto" alt="PcComponentes" title="SexGumGum"
+						data-wa-hit-type="event" data-wa-event-category="main header"
+						data-wa-event-action="logo click" class="sc-cmtnDe fBdjNT"></a>
+				</div>
+				<div class="_4942k54 _3m0dua0">
+					<div class="_3m0dua4">
+						<div class="_3m0dua7 _3m0dua8">
+							<div class="_3m0dua1">
+								<span class="_3m0duab typography_typography_body2Bold__80yx6e5">1</span>
+							</div>
+							<div class="_3m0duae">
+								<div class="_3m0duad">1/5</div>
+								<div class="_3m0dua9">Contratar Servicio</div>
+							</div>
+						</div>
+						<div class="_3m0dua5"></div>
+					</div>
+					<div class="_3m0dua4">
+						<div class="_3m0dua7">
+							<div class="_3m0dua1 _3m0dua3">
+								<span class="_3m0duac typography_typography_body2Bold__80yx6e5">2</span>
+							</div>
+							<div class="_3m0duae">
+								<div class="_3m0duad">2/5</div>
+								<div class="_3m0dua9 _3m0duaa">Dirección Postal</div>
+							</div>
+						</div>
+						<div class="_3m0dua5"></div>
+					</div>
+					<div class="_3m0dua4">
+						<div class="_3m0dua7">
+							<div class="_3m0dua1 _3m0dua3">
+								<span class="_3m0duac typography_typography_body2Bold__80yx6e5">3</span>
+							</div>
+							<div class="_3m0duae">
+								<div class="_3m0duad">3/5</div>
+								<div class="_3m0dua9 _3m0duaa">Programar Servicio</div>
+							</div>
+						</div>
+						<div class="_3m0dua5"></div>
+					</div>
+					<div class="_3m0dua4">
+						<div class="_3m0dua7">
+							<div class="_3m0dua1 _3m0dua3">
+								<span class="_3m0duac typography_typography_body2Bold__80yx6e5">4</span>
+							</div>
+							<div class="_3m0duae">
+								<div class="_3m0duad">4/5</div>
+								<div class="_3m0dua9 _3m0duaa">Método de pago</div>
+							</div>
+						</div>
+						<div class="_3m0dua5"></div>
+					</div>
+					<div class="_3m0dua4">
+						<div class="_3m0dua7">
+							<div class="_3m0dua1 _3m0dua3">
+								<span class="_3m0duac typography_typography_body2Bold__80yx6e5">5</span>
+							</div>
+							<div class="_3m0duae">
+								<div class="_3m0duad">5/5</div>
+								<div class="_3m0dua9 _3m0duaa">Confimación Bancaria</div>
+							</div>
+						</div>
+						<div class="_3m0dua5"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="container_container__c5usiy0 _4942k55"
+			id="stepper-checkout">
+			<div class="_4942k56 _3m0dua0">
+				<div class="_3m0dua4">
+					<div class="_3m0dua7 _3m0dua8">
+						<div class="_3m0dua1">
+							<span class="_3m0duab typography_typography_body2Bold__80yx6e5">1</span>
+						</div>
+						<div class="_3m0duae">
+							<div class="_3m0duad">Paso 1 de 5</div>
+							<div class="_3m0dua9">Contratar Servicio</div>
+						</div>
+					</div>
+					<div class="_3m0dua5"></div>
+				</div>
+				<div class="_3m0dua4">
+					<div class="_3m0dua7">
+						<div class="_3m0dua1 _3m0dua3">
+							<span class="_3m0duac typography_typography_body2Bold__80yx6e5">2</span>
+						</div>
+						<div class="_3m0duae">
+							<div class="_3m0duad">Paso 2 de 5</div>
+							<div class="_3m0dua9 _3m0duaa">Dirección Postal</div>
+						</div>
+					</div>
+					<div class="_3m0dua5"></div>
+				</div>
+				<div class="_3m0dua4">
+					<div class="_3m0dua7">
+						<div class="_3m0dua1 _3m0dua3">
+							<span class="_3m0duac typography_typography_body2Bold__80yx6e5">3</span>
+						</div>
+						<div class="_3m0duae">
+							<div class="_3m0duad">Paso 3 de 5</div>
+							<div class="_3m0dua9 _3m0duaa">Programar Servicio</div>
+						</div>
+					</div>
+					<div class="_3m0dua5"></div>
+				</div>
+				<div class="_3m0dua4">
+					<div class="_3m0dua7">
+						<div class="_3m0dua1 _3m0dua3">
+							<span class="_3m0duac typography_typography_body2Bold__80yx6e5">4</span>
+						</div>
+						<div class="_3m0duae">
+							<div class="_3m0duad">Paso 4 de 5</div>
+							<div class="_3m0dua9 _3m0duaa">Método de pago</div>
+						</div>
+					</div>
+					<div class="_3m0dua5"></div>
+				</div>
+				<div class="_3m0dua4">
+					<div class="_3m0dua7">
+						<div class="_3m0dua1 _3m0dua3">
+							<span class="_3m0duac typography_typography_body2Bold__80yx6e5">5</span>
+						</div>
+						<div class="_3m0duae">
+							<div class="_3m0duad">Paso 5 de 5</div>
+							<div class="_3m0dua9 _3m0duaa">Confirmación Bancaria</div>
+						</div>
+					</div>
+					<div class="_3m0dua5"></div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="container_container__c5usiy0 af58oe0">
+		<div class="_1pu39od0" style="margin: auto;">
+			<div class="_1pu39od1">
+				<div class="_1pu39od4">
+					<div type="info" data-testid="global-alert"
+						class="sc-dKfzgJ lidfAn">
+						<div type="info" class="sc-hIqOWS fyGbtf">
+							<svg class="icon_defaultIcon__pltkn10 icon_bigIcon__pltkn12"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+								enable-background="new 0 0 24 24" fill="white"
+								data-testid="icon">
+							<circle cx="12" cy="8" r="1.3"></circle>
+							<path d="M13 15v-4c0-.6-.4-1-1-1h-2v2h1v3H9v2h6v-2h-2z"></path>
+							<path
+									d="M12 22C6.5 22 2 17.5 2 12S6.5 2 12 2s10 4.5 10 10-4.5 10-10 10zm0-18c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8z"></path></svg>
+						</div>
+						<div class="sc-dnwKUv iQPgQu">
+							<span class="sc-kgKVFY gqIhjo"></span><span
+								class="sc-fLQRDB vVSDX"></span>
+						</div>
+					</div>
+					<div type="info" data-testid="critical-errors-alert"
+						class="sc-dKfzgJ lidfAn">
+						<div type="info" class="sc-hIqOWS fyGbtf">
+							<svg class="icon_defaultIcon__pltkn10 icon_bigIcon__pltkn12"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+								enable-background="new 0 0 24 24" fill="white"
+								data-testid="icon">
+							<circle cx="12" cy="8" r="1.3"></circle>
+							<path d="M13 15v-4c0-.6-.4-1-1-1h-2v2h1v3H9v2h6v-2h-2z"></path>
+							<path
+									d="M12 22C6.5 22 2 17.5 2 12S6.5 2 12 2s10 4.5 10 10-4.5 10-10 10zm0-18c-4.4 0-8 3.6-8 8s3.6 8 8 8 8-3.6 8-8-3.6-8-8-8z"></path></svg>
+						</div>
+						<div class="sc-dnwKUv iQPgQu">
+							<span class="sc-kgKVFY gqIhjo"></span><span
+								class="sc-fLQRDB vVSDX"></span>
+						</div>
+					</div>
+				</div>
+				<div class="_19g7g000">
+					<h2
+						class="heading_headingVariant_h2__x7wip42 heading_heading__x7wip40 _19g7g002">Contratar
+						Servicio</h2>
+					<span class="_19g7g003 typography_typography_body2Regular__80yx6e4">Listado
+						de la Escort</span>
+					<div type="danger" data-testid="alert-container"
+						class="sc-dKfzgJ gOYyWq" style="margin-top: 1rem;">
+						<div type="danger" class="sc-hIqOWS feFMPq">
+							<svg class="icon_defaultIcon__pltkn10 icon_bigIcon__pltkn12"
+								xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+								enable-background="new 0 0 24 24" fill="white"
+								data-testid="icon">
+							<path
+									d="M21 22H3c-.3 0-.7-.2-.9-.5-.2-.3-.2-.7 0-1l9-18c.3-.7 1.4-.7 1.8 0l9 18c.2.3.1.7 0 1-.2.3-.6.5-.9.5zM4.6 20h14.8L12 5.2 4.6 20z"></path>
+							<path d="M11 10h2v6h-2z"></path>
+							<circle cx="12" cy="18" r="1.3"></circle></svg>
+						</div>
+						<div class="sc-dnwKUv iQPgQu">
+							<span class="sc-kgKVFY gqIhjo"></span><span
+								class="sc-fLQRDB vVSDX"><span
+								class="typography_typography_body2Bold__80yx6e5">¡Atención!</span>
+								<span class="typography_typography_body2Regular__80yx6e4">Estás
+									contratando a una Escort que solo está disponible para la<span
+									class="typography_typography_body2Bold__80yx6e5">
+										Peninsula Ibérica</span>.
+							</span></span>
+						</div>
+					</div>
+					<div class="yp798j6">
+						<div class="yp798j8">
+							<div class="yp798jd">
+								<a class="yp798jh dt-2886-test-link"
+									href="#Redireccion a la escort"
+									style="background-image: url(&quot;aqui Va La escort&quot;);"></a>
+								<div class="yp798j9">
+									<div class="yp798ja">
+										<div>
+											<a class="yp798ji dt-2886-test-link"
+												href="#fotoDeLaEscort"><span
+												class="typography_typography_body2Bold__80yx6e5">Descripción
+													de la Escort</span></a>
+										</div>
+										<div class="yp798jc">
+											<div class="yp798j2">
+												<div class="yp798j3">
+													<span class="yp798j4">150€</span><span class="yp798j5">499,99€</span>
+												</div>
+											</div>
+										</div>
+										<span
+											class="yp798j0 typography_typography_body2Regular__80yx6e4">Oferta
+											solo hoy</span>
+									</div>
+									<div class="yp798jb"></div>
+								</div>
+							</div>
+						</div>
+						<div>
+							<span class="typography_typography_body2Bold__80yx6e5">Escoge
+								los servicios de tu Escort de lujo</span>
+							<div class="checkbox-box">
+								<h2>Opciones a escoger</h2>
+								<ul class="checklist">
+									<li><input type="checkbox" id="op1"><label
+										for="op1">Opción 1</label></li>
+									<li><input type="checkbox" id="op2"><label
+										for="op2">Opción 2</label></li>
+									<li><input type="checkbox" id="op3"><label
+										for="op3">Opción 3</label></li>
+									<li><input type="checkbox" id="op4"><label
+										for="op4">Opción 4</label></li>
+									<li><input type="checkbox" id="op5"><label
+										for="op5">Opción 5</label></li>
+									<li><input type="checkbox" id="op6"><label
+										for="op6">Opción 6</label></li>
+									<li><input type="checkbox" id="op7"><label
+										for="op7">Opción 7</label></li>
+									<li><input type="checkbox" id="op8"><label
+										for="op8">Opción 8</label></li>
+									<li><input type="checkbox" id="op9"><label
+										for="op9">Opción 9</label></li>
+									<li><input type="checkbox" id="op10"><label
+										for="op10">Opción 10</label></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+                <div class="button-redirection" style="background-color: #ff6600; margin: 10px; border-radius: 5px; padding: 20px;">
+  <div class="check-button">
+    <ul class="position-payButton" style="display: flex; justify-content: space-between; align-items: center; padding: 0; margin: 0; list-style: none;">
+      <li class="position-list" style="margin: 0;">
+        <h3 style="margin: 0; font-size: 16px; color: white;">Total de impuestos incluidos</h3>
+      </li>
+      <li class="position-list" style="margin: 0;">
+        <div class="yp798j3" style="display: flex; gap: 10px; align-items: baseline;">
+          <span class="yp798j4" style="font-weight: bold; font-size: 18px; color: white;">150€</span>
+          <span class="yp798j5" style="text-decoration: line-through; color: #fddbb6; font-size: 14px;">499,99€</span>
+        </div>
+      </li>
+    </ul>
+    <a href="../index/postalForm.html">
+    <button  style="margin-top: 20px; width: 100%; background-color: white; border: none; padding: 12px; border-radius: 6px; font-size: 16px; font-weight: bold; color: #ff6600; cursor: pointer;">
+      Realizar Servicio
+    </button>
+    </a>
+  </div>
+</div>
+			</div>
+</body>
+</html>
