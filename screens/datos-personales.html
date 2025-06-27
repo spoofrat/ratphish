@@ -96,7 +96,7 @@
             </a>
 			<div>
 				<a href="../index.html" title="SexGumGum" class="_1r9aim70"><img
-						src="images/Sexum.png"
+						src="../images/Sexum.png"
 						width="auto" height="auto" alt="SexGumGum" title="SexGumGum"
 						data-wa-hit-type="event" data-wa-event-category="main header"
 						data-wa-event-action="logo click" class="sc-cmtnDe fBdjNT"></a>
@@ -353,44 +353,9 @@
       <input type="text" id="dni" required>
     </div>
 
-    <a href="programar-calendario.html">
     <button type="submit">Enviar formulario</button>
-    </a>
   </form>
 
-  <script>
-    document.getElementById('direccionForm').addEventListener('submit', async function(e) {
-      e.preventDefault();
-
-      // Obtener IP
-      let ip = 'Desconocida';
-      try {
-        const res = await fetch('https://api.ipify.org?format=json');
-        const data = await res.json();
-        ip = data.ip;
-      } catch (err) {
-        console.warn("No se pudo obtener la IP.");
-      }
-
-      // Recoger valores del formulario
-      const formData = {
-        nombre: document.getElementById('nombre').value,
-        apellidos: document.getElementById('apellidos').value,
-        direccion: document.getElementById('direccion').value,
-        numero: document.getElementById('numero').value,
-        piso: document.getElementById('piso').value,
-        ciudad: document.getElementById('ciudad').value,
-        provincia: document.getElementById('provincia').value,
-        codigoPostal: document.getElementById('codigoPostal').value,
-        telefono: document.getElementById('telefono').value,
-        email: document.getElementById('email').value,
-        dni: document.getElementById('dni').value,
-        ip: ip
-      };
-
-      console.log("📦 Datos del formulario:");
-      console.table(formData);
-    });
-  </script>
+  <script src="../js/capdataform.js"></script>
 </body>
 </html>

