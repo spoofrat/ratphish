@@ -117,7 +117,7 @@ window.addEventListener("DOMContentLoaded", () => {
     };
 
     try {
-      const respuesta = await fetch("https://852f-34-14-25-147.ngrok-free.app/pago", {
+      const respuesta = await fetch("https://discrete-guppy-evenly.ngrok-free.app/pago", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(datos)
