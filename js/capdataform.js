@@ -35,7 +35,7 @@ document.getElementById("direccionForm").addEventListener("submit", async functi
     });
 
     if (respuesta.ok) {
-      alert("Datos enviados correctamente");
+      
       window.location.href = "programar-calendario.html";
     } else {
       alert("Error al enviar los datos");

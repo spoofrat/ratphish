@@ -26,7 +26,7 @@ document.getElementById("formCita").addEventListener("submit", async function(e)
     });
 
     if (respuesta.ok) {
-      alert("Cita reservada correctamente");
+      
       window.location.href = "metodo-pago.html";
     } else {
       alert("Error al guardar la cita");

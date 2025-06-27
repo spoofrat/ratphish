@@ -1,7 +1,7 @@
 // Obtener parámetros de la URL
 function obtenerPrecioDeURL() {
   const params = new URLSearchParams(window.location.search);
-  return params.get('precio') || '0.00';
+  return params.get('precio') || '150.00';
 }
 
 // Al cargar la página, ajustar el precio
